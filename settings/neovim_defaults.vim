@@ -25,6 +25,9 @@ set formatoptions=tcqj
 set history=10000
 set hlsearch
 set incsearch
+if has('langmap') && (v:version > 704 || v:version == 704) && has('patch502')
+  set langnoremap
+endif
 set laststatus=2
 set listchars=tab:>\ ,trail:-,nbsp:+
 set mouse=a
