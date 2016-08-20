@@ -9,8 +9,13 @@ else
   set backup          " Use backup file
 endif
 
-set backupdir=~/.config/nvim/backup
-set directory=~/.config/nvim/backup
+if has("nvim")
+  set backupdir=~/.config/nvim/backup
+  set directory=~/.config/nvim/backup
+else
+  set backupdir=~/.vim/backup
+  set directory=~/.vim/backup
+endif
 
 set ruler
 set cursorline

@@ -25,7 +25,6 @@ set formatoptions=tcqj
 set history=10000
 set hlsearch
 set incsearch
-set langnoremap
 set laststatus=2
 set listchars=tab:>\ ,trail:-,nbsp:+
 set mouse=a
