@@ -3,11 +3,7 @@ colorscheme ir_black
 set number            " Show line number
 set nowrap
 
-if has("vms")
-  set nobackup        " Use version instead of backup file
-else
-  set backup          " Use backup file
-endif
+set nobackup        " Don't use backup file
 
 set cursorline
 
