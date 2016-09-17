@@ -1,4 +1,4 @@
-if !empty(glob("./.vimrc"))
-  source .vimrc
+if !empty(glob("./.lvimrc"))
+  source .lvimrc
 endif
 
