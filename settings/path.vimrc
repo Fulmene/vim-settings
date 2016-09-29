@@ -1,3 +1,5 @@
 " Path for Windows
-set runtimepath+=~/.vim,~/.vim/after
+if has('Win32')
+  set runtimepath+=~/.vim,~/.vim/after
+endif
 

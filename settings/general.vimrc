@@ -14,6 +14,7 @@ set expandtab
 set shiftwidth=2
 
 " UTF-8
+set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 
@@ -25,4 +26,7 @@ set lazyredraw
 set magic             " Regular expressions
 
 set autoread
+
+set foldmethod=indent
+set foldignore=
 
