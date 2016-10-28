@@ -27,6 +27,3 @@ set magic             " Regular expressions
 
 set autoread
 
-set foldmethod=indent
-set foldignore=
-
