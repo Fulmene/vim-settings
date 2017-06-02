@@ -1,4 +1,4 @@
-source $VIMRUNTIME/defaults.vim
+source $HOME/.vim/default.vimrc
 
 source $HOME/.vim/settings/path.vimrc
 source $HOME/.vim/settings/general.vimrc
