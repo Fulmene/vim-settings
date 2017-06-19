@@ -1,5 +1,3 @@
-colorscheme ir_black
-
 set number            " Show line number
 set nowrap
 
