@@ -1,0 +1,36 @@
+#!/bin/bash
+
+ORI_VIM_SETTINGS_DIR=~/git/vim-settings
+ORI_VIMRC=$ORI_VIM_SETTINGS_DIR/.vimrc
+ORI_NVIMRC=$ORI_VIM_SETTINGS_DIR/init.vim
+ORI_VIM_COLORS_DIR=~/git/ir_black/colors
+ORI_VIM_PLUGIN_DIR=$ORI_VIM_SETTINGS_DIR/plugin
+ORI_VIM_DEFAULT_FILE=~/git/vim/runtime/defaults.vim
+NEW_VIM_SETTINGS_DIR=~/.vim
+NEW_VIMRC=~/.vimrc
+NEW_VIM_COLORS_DIR=$NEW_VIM_SETTINGS_DIR/colors
+NEW_VIM_PLUGIN_DIR=$NEW_VIM_SETTINGS_DIR/dein
+NEW_NVIM_SETTINGS_DIR=~/.config/nvim
+NEW_NVIMRC=$NEW_NVIM_SETTINGS_DIR/init.vim
+
+mkdir -p $NEW_VIM_SETTINGS_DIR
+mkdir -p $NEW_VIM_SETTINGS_DIR/settings
+mkdir -p $NEW_VIM_COLORS_DIR
+mkdir -p $NEW_VIM_PLUGIN_DIR
+mkdir -p $NEW_NVIM_SETTINGS_DIR
+
+rm -rf $NEW_VIMRC
+rm -rf $NEW_VIM_SETTINGS_DIR/settings/*
+rm -rf $NEW_VIM_COLORS_DIR/*
+rm -rf $NEW_VIM_PLUGIN_DIR/*
+rm -rf $NEW_NVIMRC
+
+ln -s $ORI_VIMRC $NEW_VIMRC
+ln -s $ORI_VIM_DEFAULT_FILE ~/.vim/settings/defaults.vimrc
+ln -s $ORI_VIM_SETTINGS_DIR/settings/* $NEW_VIM_SETTINGS_DIR/settings
+ln -s $ORI_VIM_COLORS_DIR/* $NEW_VIM_COLORS_DIR
+ln -s $ORI_VIM_PLUGIN_DIR/* $NEW_VIM_PLUGIN_DIR
+ln -s $ORI_NVIMRC $NEW_NVIMRC
+
+sh dein.sh
+
