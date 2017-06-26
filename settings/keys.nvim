@@ -4,11 +4,7 @@ let mapleader="\<Space>"
 nnoremap j gj
 nnoremap k gk
 
-" Move lines
-nnoremap <M-j> ddp
-nnoremap <M-k> ddkP
-
-" windows
+" Windows
 " Move
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
