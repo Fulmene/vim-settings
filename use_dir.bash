@@ -1,0 +1,2 @@
+echo $script_dir
+

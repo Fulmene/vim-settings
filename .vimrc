@@ -6,3 +6,5 @@ source $HOME/.vim/settings/general.vimrc
 source $HOME/.vim/settings/keys.vimrc
 source $HOME/.vim/settings/local.vimrc
 
+source $HOME/.vim/dein/setup.vimrc
+

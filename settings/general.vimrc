@@ -25,3 +25,7 @@ set magic             " Regular expressions
 
 set autoread
 
+if has('mouse')
+  set mouse=a
+endif
+
