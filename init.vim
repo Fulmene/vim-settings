@@ -12,11 +12,11 @@ endif
 let settingspath = expand(configpath . '/settings')
 let pluginpath = expand(configpath . '/dein')
 
-exec "source " . pluginpath . "/dein.nvim"
+exec "source " . pluginpath . "/dein.vim"
 
-exec "source " . settingspath . "/general.nvim"
-exec "source " . settingspath . "/keys.nvim"
-exec "source " . settingspath . "/local.nvim"
+exec "source " . settingspath . "/general.vim"
+exec "source " . settingspath . "/keys.vim"
+exec "source " . settingspath . "/local.vim"
 
-exec "source " . pluginpath . "/setup.nvim"
+exec "source " . pluginpath . "/setup.vim"
 

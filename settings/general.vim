@@ -6,10 +6,11 @@ set nobackup        " Don't use backup file
 set cursorline
 
 " Tab
-set tabstop=2
-set softtabstop=2
+let tabsize=4;
+exec "set tabstop=" . tabsize
+exec "set softtabstop=" . tabsize
+exec "set shiftwidth=" . tabsize
 set expandtab
-set shiftwidth=2
 
 " UTF-8
 set encoding=utf-8

@@ -1,3 +1,4 @@
+" Use spacebar as leader
 let mapleader="\<Space>"
 
 " Navigation
@@ -22,9 +23,16 @@ nnoremap <leader>J <C-w>j<C-w>_<C-w>\|
 nnoremap <leader>K <C-w>k<C-w>_<C-w>\|
 nnoremap <leader>L <C-w>l<C-w>_<C-w>\|
 
+" Tabs
+" Tab navigation
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+
 " Neovim terminal
-if has('nvim')
-  nnoremap <leader>t :vsplit term://bash<CR><C-w>h<C-w>_<C-w>\|
-  tnoremap <Esc> <C-\><C-N>
-endif
+" Open terminal tab with <leader>t
+nnoremap <leader>t :tabedit term://bash | startinsert<CR>
+
+" Press <Esc> twice to exit to normal mode from terminal
+" (Single <Esc> is for Readline's command mode)
+tnoremap <Esc><Esc> <C-\><C-n>
 
