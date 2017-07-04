@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Add $script_dir variable as the script directory
-. current_dir.bash
+. current_dir.sh
 
 # File paths
 source_config_dir=$script_dir
