@@ -6,7 +6,7 @@ set nobackup        " Don't use backup file
 set cursorline
 
 " Tab
-let tabsize=4;
+let tabsize = 4;
 exec "set tabstop=" . tabsize
 exec "set softtabstop=" . tabsize
 exec "set shiftwidth=" . tabsize
