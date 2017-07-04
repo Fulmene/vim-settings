@@ -30,7 +30,7 @@ nnoremap <C-l> :tabnext<CR>
 
 " Neovim terminal
 " Open terminal tab with <leader>t
-nnoremap <leader>t :tabedit term://bash \| startinsert<CR>
+nnoremap <leader>t :tabedit term://bash<CR>:set nonumber<CR>i
 
 " Press <Esc> twice to exit to normal mode from terminal
 " (Single <Esc> is for Readline's command mode)
