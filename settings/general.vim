@@ -1,4 +1,6 @@
-set number            " Show line number
+augroup startup
+    autocmd BufNewFile,BufReadPost,FilterReadPost,FileReadPost * :set number            " Always show line number on new buffer
+augroup end
 set nowrap
 
 set nobackup        " Don't use backup file
@@ -24,8 +26,4 @@ set lazyredraw
 set magic             " Regular expressions
 
 set autoread
-
-if has('mouse')
-  set mouse=a
-endif
 
