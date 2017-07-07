@@ -28,9 +28,14 @@ nnoremap <leader>L <C-w>l<C-w>_<C-w>\|
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 
+" Close tab
+nnoremap <leader>q :tabclose<CR>
+
 " Neovim terminal
-" Open terminal tab with <leader>t
-nnoremap <leader>t :tabedit term://bash<CR>:set nonumber<CR>i
+" Open terminal tabs and splits
+nnoremap <leader>tt :tabedit term://bash<CR>:set nonumber<CR>i
+nnoremap <leader>ts :split term://bash<CR>:set nonumber<CR>i
+nnoremap <leader>tv :vsplit term://bash<CR>:set nonumber<CR>i
 
 " Press <Esc> twice to exit to normal mode from terminal
 " (Single <Esc> is for Readline's command mode)
